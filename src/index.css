@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.notification {
+    width: 10rem;
+    height: 3rem;
+    background-color: red;
+}
+.notification2 {
+    width: 10rem;
+    height: 3rem;
+    background-color: green;
+}
+.notification3 {
+    width: 10rem;
+    height: 3rem;
+    background-color: blue;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
