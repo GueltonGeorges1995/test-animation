@@ -16,16 +16,21 @@ code {
     width: 10rem;
     height: 3rem;
     background-color: red;
+    margin-bottom: 5rem;
 }
 .notification2 {
     width: 10rem;
     height: 3rem;
     background-color: green;
+    margin-bottom: 5rem;
+
 }
 .notification3 {
     width: 10rem;
     height: 3rem;
     background-color: blue;
+    margin-bottom: 5rem;
+
 }
 
 .container {

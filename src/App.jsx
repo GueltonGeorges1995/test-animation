@@ -3,7 +3,7 @@ import { motion, useCycle } from 'framer-motion';
 
 const firstAnimationVariants = {
     leftAnimation1: {
-        x: -250,
+        x: '-20rem',
         transition: {
             x: {
                 duration: 3
@@ -11,7 +11,7 @@ const firstAnimationVariants = {
         }
     },
     upAnimation1: {
-        y: -150,
+        y: '-25rem',
         transition: {
             y: {
                 duration: 3
@@ -19,7 +19,7 @@ const firstAnimationVariants = {
         }
     },
     rightAnimation1: {
-        x: 0,
+        x: '0rem',
         transition: {
             x: {
                 duration: 3
@@ -27,7 +27,7 @@ const firstAnimationVariants = {
         }
     },
     downAnimation1: {
-        y: 150,
+        y: '0rem',
         transition: {
             y: {
                 duration: 3
@@ -38,7 +38,7 @@ const firstAnimationVariants = {
 
 const secondAnimationVariants = {
     downAnimation2: {
-        y: 75,
+        y: '8rem',
         transition: {
             y: {
                 duration: 3
@@ -46,7 +46,7 @@ const secondAnimationVariants = {
         }
     },
     rightAnimation2: {
-        x: 250,
+        x: '20rem',
         transition: {
             x: {
                 duration: 3
@@ -54,7 +54,7 @@ const secondAnimationVariants = {
         }
     },
     upAnimation2: {
-        y: -150,
+        y: '-11rem',
         transition: {
             y: {
                 duration : 3
@@ -62,7 +62,7 @@ const secondAnimationVariants = {
         }
     },
     leftAnimation2: {
-        x: 0,
+        x: '0rem',
         transition: {
             x: {
                 duration: 3
@@ -73,15 +73,15 @@ const secondAnimationVariants = {
 
 const thirdAnimationVariants = {
     downAnimation3: {
-        y: 150,
+        y: '16rem',
         transition: {
             y: {
-                duration: 3
+                duration: 3,
             }
         }
     },
     leftAnimation3: {
-        x: -250,
+        x: '-20rem',
         transition: {
             x: {
                 duration: 3
@@ -89,7 +89,7 @@ const thirdAnimationVariants = {
         }
     },
     upAnimation3: {
-        y: -150,
+        y: '0rem',
         transition: {
             y: {
                 duration: 3
@@ -97,7 +97,7 @@ const thirdAnimationVariants = {
         }
     },
     rightAnimation3: {
-        x: 0,
+        x: '0rem',
         transition: {
             x: {
                 duration: 3
@@ -130,15 +130,13 @@ const App = () => {
                         animate={animation3}
                     
                     ></motion.div>
-                    <br/>
-                    <br/>
+                    
                     <motion.div 
                         className='notification3'
                         variants={secondAnimationVariants}
                         animate={animation2}
                     ></motion.div>
-                    <br/>
-                    <br/>
+                    
                     <motion.div 
                         className='notification'
                         variants={firstAnimationVariants}
