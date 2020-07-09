@@ -77,6 +77,7 @@ const thirdAnimationVariants = {
         transition: {
             y: {
                 duration: 3,
+                delay: 3
             }
         }
     },
@@ -84,7 +85,9 @@ const thirdAnimationVariants = {
         x: '-20rem',
         transition: {
             x: {
-                duration: 3
+                duration: 3,
+                delay: 3
+
             },
         }
     },
@@ -92,7 +95,9 @@ const thirdAnimationVariants = {
         y: '0rem',
         transition: {
             y: {
-                duration: 3
+                duration: 3,
+                delay: 3
+
             }
         }
     },
@@ -100,7 +105,9 @@ const thirdAnimationVariants = {
         x: '0rem',
         transition: {
             x: {
-                duration: 3
+                duration: 3,
+                delay: 3
+
             }
         }
     }
@@ -115,9 +122,17 @@ const App = () => {
     useEffect(() => {
         setInterval(() => {
             cycleAnimation1();
+        }, 3000);
+
+        setInterval(() => {
             cycleAnimation2();
+        }, 3000);
+
+        setInterval(() => {
             cycleAnimation3();
         }, 3000);
+        
+
     }, []);
 
     return (
