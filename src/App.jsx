@@ -4,8 +4,13 @@ import { motion, useCycle } from 'framer-motion';
 const firstAnimationVariants = {
     leftAnimation1: {
         x: '-20rem',
+        opacity: 0,
+
         transition: {
             x: {
+                duration: 3
+            },
+            opacity: {
                 duration: 3
             }
         }
@@ -15,7 +20,7 @@ const firstAnimationVariants = {
         transition: {
             y: {
                 duration: 3
-            },
+            }
         }
     },
     rightAnimation1: {
@@ -28,8 +33,12 @@ const firstAnimationVariants = {
     },
     downAnimation1: {
         y: '0rem',
+        opacity: 1,
         transition: {
             y: {
+                duration: 3
+            },
+            opacity: {
                 duration: 3
             }
         }
@@ -39,16 +48,24 @@ const firstAnimationVariants = {
 const secondAnimationVariants = {
     downAnimation2: {
         y: '8rem',
+        opacity: 1,
         transition: {
             y: {
+                duration: 3
+            },
+            opacity: {
                 duration: 3
             }
         }
     },
     rightAnimation2: {
         x: '20rem',
+        opacity: 0,
         transition: {
             x: {
+                duration: 3
+            },
+            opacity: {
                 duration: 3
             }
         }
@@ -74,21 +91,30 @@ const secondAnimationVariants = {
 const thirdAnimationVariants = {
     downAnimation3: {
         y: '16rem',
+        opacity: 1,
         transition: {
             y: {
                 duration: 3,
                 delay: 3
+            },
+            opacity: {
+                duration: 3,
+                delay: 1
             }
         }
     },
     leftAnimation3: {
         x: '-20rem',
+        opacity: 0,
         transition: {
             x: {
                 duration: 3,
                 delay: 3
-
             },
+            opacity: {
+                duration: 3,
+                delay: 3
+            }
         }
     },
     upAnimation3: {
@@ -108,7 +134,7 @@ const thirdAnimationVariants = {
                 duration: 3,
                 delay: 3
 
-            }
+            },
         }
     }
 };
@@ -122,17 +148,9 @@ const App = () => {
     useEffect(() => {
         setInterval(() => {
             cycleAnimation1();
-        }, 3000);
-
-        setInterval(() => {
             cycleAnimation2();
-        }, 3000);
-
-        setInterval(() => {
             cycleAnimation3();
         }, 3000);
-        
-
     }, []);
 
     return (

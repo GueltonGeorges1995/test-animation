@@ -23,6 +23,7 @@ code {
     height: 3rem;
     background-color: green;
     margin-bottom: 5rem;
+    opacity: 0;
 
 }
 .notification3 {
